@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.header {
+    color: blue;
+    padding: 40px;
+    text-align: center;
+}
+
+ul {
+    background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 16px 24px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover:not(.active) {
+    background-color: blanchedalmond;
+    color: brown;
+}
+
+.active {
+    background-color: forestgreen;
+}
+
+.content {
+    padding: 35px;
+}
