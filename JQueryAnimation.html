@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                var div = $("div");
+
+                div.animate({
+                        left: '300px'
+                    }, "slow")
+                    .animate({
+                        bottom: '150px'
+                    }, "slow")
+                    .animate({
+                        left: '50px'
+                    }, "slow")
+                    .animate({
+                        top: '120px'
+                    }, "slow")
+                    .animate({
+                        fontSize: '2em'
+                    }, "slow")
+
+
+            });
+
+        });
+    </script>
+
+</head>
+
+<body style="padding: 3em;">
+    <button>Start Animation</button>
+    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+    <div style="background-color: darkkhaki;height: 100px;width: 200px; position: absolute;">HELLO KICKOFF</div>
+
+</body>
+
+</html>
